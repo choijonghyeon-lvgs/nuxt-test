@@ -1,0 +1,21 @@
+{
+    "extends": "./.nuxt/tsconfig.json",
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "strict": true,
+        "noEmit": true,
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "types": ["@types/node", "@nuxt/types", "@nuxtjs/axios"]
+    },
+    "resolveJsonModule": true,
+    "exclude": ["node_modules", ".nuxt"],
+    "include": ["src/**/*", "generated/**/*"]
+}
